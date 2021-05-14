@@ -1,0 +1,67 @@
+.flex-contenedor-columnas{
+    width: 33%;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightsteelblue;
+    padding: 5%;
+    display: flex;
+    /*      por defecto viene       
+    flex-direction: row;                                      */
+    justify-content: center;    /*  centra de derecha a izq   */
+    align-items: center;        /*  centra de arriba a abajo  */
+}
+
+.flex-contenedor-filas{
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightsteelblue;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /*aca centra de derecha a izq*/
+
+}
+
+.flex-contenedor-cuadricula{
+    width: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: lightsteelblue;
+    padding: 5%;
+    /* Para que sea cuardicula, importa el display flex y el wrap para habilitar el salto de línea */
+    display: flex;
+    flex-wrap: wrap;
+
+    /* Centrado */
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-contenedor-inline{
+    width: 25%;
+    background-color: lightsteelblue;
+    padding: 5%;
+    display: inline-flex;
+}
+
+.flex-contenedor-inline-reverse{
+    width: 25%;
+    background-color: lightsteelblue;
+    padding: 5%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+
+.flex-item{
+    width: 30px;
+    height: 30px;
+    margin: 5%;
+    line-height: 30px;
+    color:lightyellow;
+    text-align: center;
+    background-color: grey;
+
+}

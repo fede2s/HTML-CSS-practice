@@ -1,0 +1,48 @@
+body{
+    background-color:slategrey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(232, 255, 247);
+}
+
+.cajita{
+    background-color: rgb(232, 255, 247);
+    color:slategrey;
+    border-radius: 10%;
+    padding: 20px;
+    width: 200px;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 2px 2px 20px #666; /* sombrita, pa */
+}
+.columnita{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 25px 100px 120px;
+}
+
+.circulo{
+    background-color:lightskyblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.conitoDeFritasXD{
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    border-top: 100px solid lightgreen;
+    border-right: 70px solid transparent;
+    border-left: 70px solid transparent;
+    margin-left: -20px;   
+}
+
+.mediaLuna{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 25px 15px 0 yellow;
+    margin-left: -25px;
+}

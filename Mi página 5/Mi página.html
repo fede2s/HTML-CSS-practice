@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    
+    <header class="cabecera">
+        <h1>La página de Fede</h1>
+    </header>
+
+    <main>
+        <form class="formulario">
+            
+            <h3>Llene los datos para contactarme</h3><br>
+            <div class="form_seccion">
+                <div class="etiqueta">nombre completo</div>
+                <input type="text" id="name" class="cajaDeTexto">
+            </div>
+
+            <div class="form_seccion">
+                <div class="etiqueta">
+                    email
+                </div>
+                <input type="email" id="mail" class="cajaDeTexto">
+            </div>
+
+            <div class="form_seccion">
+                <div class="etiqueta">
+                    teléfono
+                </div>
+                <input type="tel" id="telefono" class="cajaDeTexto">
+            </div>
+
+            <div class="form_seccion">
+                <div class="etiqueta">mensaje</div>
+                <input type="text" id="mensaje" class="cajaDeTexto">
+            </div>
+
+            <div class="form_seccion" style="justify-content:space-between;">
+                <div class="">Estoy dispuesto a enviar mis datos de contacto</div>
+                <input type="checkbox" required>
+            </div>
+
+
+            <div class="botones">
+                <input type="submit" class="botones_enviar" value="Enviar">
+                <a class="botones_cancelar" href="https://www.google.com/">Volver</a>
+                
+            </div>
+
+        </form>
+    </main>
+
+    <aside class="columnaIzquierda">
+        <h3>Datos que a nadie le importan</h3>
+        <ul>Lista de cursos realizados</ul>
+        <li>Curso profesional de base de datos</li>
+        <li>Curso de html 5</li>
+        <li>Curso de css</li>
+        <li>Curso de programación orientada a objetos con javascript</li>
+        <li>Bootcamp de python 3.7</li>
+    </aside>
+
+    <aside class="columnaDerecha">
+        <h3>Enlaces a mis otras páginas</h3>
+        <div class="enlaces">
+            <a href="#">Página web sencilla</a>
+            <a href="#">CV online</a>
+            <a href="#">e-store</a>
+            <a href="#">Calculadora online</a>
+            <a href="#">Info sobre criptomonedas</a>
+        </div>
+    </aside>
+
+    
+</body>
+</html>

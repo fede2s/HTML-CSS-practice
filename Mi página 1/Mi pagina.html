@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La pagina de Fede</title>
+    <style type="text/css">
+        .rejilla{
+            text-align: left;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-column-gap: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 0%;
+            margin-bottom: 5%;
+        }
+</style>
+
+        
+</head>
+<!--background:rgb(32, 29, 39);-->
+<body>
+
+    <div style="text-align:left;margin-left:5%;margin-right:5%;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+        <p>Hola, bienvenidos a mi página. Todavía no sé de qué se va a tratar, espero que les guste</p>
+        <p>Para saber más sobre mi, pueden visitar mi perfil en LinkedIn haciendo <a href="https://www.linkedin.com/in/federico-augusto-dos-santos-835961184/" target="_blank">click aquí</a></p>        
+    
+        <p id="modoNoche"></p>
+    </div>
+
+    
+
+    <hr>
+    <div style="width: 300px;margin-left: auto; margin-right: auto; -ms-grid-column-align: center;font-family: sans-serif;font-size: 11px;" name="Columna central">
+        <h1 style="text-align: center;">Registro</h1>
+        <form>
+            <!--Los nombres en name se envían con dicho nombre al servidor mediante el link
+            
+            Ejemplo:
+                fede.2santos_96%40hotmail.com&usuario=fede&contraseña=1234&genero=m&fechaNacimiento=1996-09-06
+            
+            De forma genérica:
+                nombreDeVariable1=valor1 & nombreDeVariable2=valor2 & ...
+            -->
+            <p>Email
+            <input size="30px" type="email" name="correo" required placeholder="Ingrese aquí su dirección de email" autofocus></p>
+            <p>Usuario
+            <input size="30px" type="text" name="usuario" required placeholder="Ingrese aqui su usuario"></p>
+            <p>Contraseña
+            <input size="30px" type="password" name="contraseña" required placeholder="Ingrese aqui su contraseña"></p>
+            <p>Género
+            <select name="genero">
+                <option value="m">Masculino</option>
+                <option value="f">Femenino</option>
+                <option value="nb">No binario</option>
+            </select></p>
+            <p> Fecha de nacimiento <input type="date" name="fechaNacimiento"></p>
+            <p>Tipo de Documento</p>
+
+            <!--Acá puedo usar el input tipo checkbox o radio. La diferencia es que checkbox me permite seleccionar varios items y radio me permite seleccionar solo uno-->
+            <input type="radio" name="tipoDocumento" value="DNI" checked>DNI <br>
+            <input type="radio" name="tipoDocumento" value="CUIL">CUIL <br>
+            <input type="radio" name="tipoDocumento" value="Pasaporte">Pasaporte <br>
+            <p>Número de Documento <input type="number" name="Documento" style="width: 50%;"></p>
+            <br>
+            <p>Acepto los términos y condiciones <input type="checkbox" required></p>
+            <br>
+            <input type="submit" value="Registrarse" style="width: 50%;"><input type="reset" value="Borrar campos" style="width: 50%">
+        </form>
+    </div>
+
+    <hr style="width: 500px;color: rgba(200, 253, 121, 0.774) ;">
+
+
+
+    <div style="text-align: center;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+        <h1>Listas</h1>
+        <p>Acá usé css para ajustar las columnas a cara de rope xd</p>
+        <br>
+        <div name="columna izq" style="margin-left: 5%; margin-right: 52.5%; text-align: left;">
+            <p>Ejemplo de lista ordenada usando etiqueta ol</p>
+            <ol>
+                <li>Primer item</li>
+                <li>Segundo item</li>
+                <li>Tercer item</li>
+            </ol>
+        </div>
+        <div name="columna derecha" style="margin-left: 52.5%;margin-right: 5%; text-align: left; margin-top: -135px">
+            <p>Ejemplo de lista desordenada usando etiqueta ul</p>
+            <ul>
+                <li>Elemento aleatorio</li>
+                <li>Elemento aleatorio</li>
+                <li>Elemento aleatorio</li>
+            </ul>
+        
+        </div>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;width: 90%;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; margin-left: 5%; margin-right 5%;">
+    <h1>Listas</h1>
+    <p>Acá usé tablas de html para ajustar 1 fila(etiqueta tr), 2 columnas(etiqueta th)</p>
+    <p>También usé estilos de css para ponerle márgenes personalizados y relleno padding</p>
+        <table style="width: 100%;">
+        <tr>
+            <th style="text-align:left; padding-right:5%;">
+                <p>Ejemplo de lista ordenada usando etiqueta ol</p>
+                <ol>
+                    <li>Primer item</li>
+                    <li>Segundo item</li>
+                    <li>Tercer item</li>
+                </ol>
+            </th>
+
+            <th style="text-align: left;padding-left: 5%;">
+                <p>Ejemplo de lista desordenada usando etiqueta ul</p>
+                <ul>
+                    <li>Elemento aleatorio</li>
+                    <li>Elemento aleatorio</li>
+                    <li>Elemento aleatorio</li>
+                </ul>
+
+            </th>
+        </tr>
+    </table>
+    </div>
+
+    
+    <div style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <h1>Listas</h1>
+        <p>Acá usé grid de css. Se me hizo super fácil y rápido</p>
+        <p style="text-align: left; margin-left: 15%;">Hay que usar las propiedades:</p>
+        <ul style="text-align: left; margin-left: 20%">
+            <li>display:grid;</li>
+            <li>grid-template-columns: 50% 50%; </li>
+        </ul>
+
+        <div class="rejilla">
+            <div>
+                <p>Ejemplo de lista ordenada usando etiqueta ol</p>
+                    <ol>
+                        <li>Primer item</li>
+                        <li>Segundo item</li>
+                        <li>Tercer item</li>
+                    </ol>
+            </div>
+            <div>
+                <p>Ejemplo de lista desordenada usando etiqueta ul</p>
+                    <ul>
+                        <li>Elemento aleatorio</li>
+                        <li>Elemento aleatorio</li>
+                        <li>Elemento aleatorio</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center ;width: 300px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-right: auto;margin-left: auto;">
+        <h1>Mi barrio</h1>
+        <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=533&amp;hl=es&amp;q=parque%20avellaneda,%20capital%20federal+(Mi%20barrio)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="533" frameborder="0"></iframe><a href="https://www.mapsdirections.info/marcar-radio-circulo-mapa/">Calculadora de radio del mapa</a></div>
+
+    <script>
+        function modoNoche(){
+            fecha = new Date();
+            hora = fecha.getHours();
+
+            if( (hora>='6') && (hora<='18') ){
+                //cambio el color de fondo y de texto
+                document.body.style.background = "#ffffff";
+                document.body.style.color = "black";
+                
+                noche= "Es de día, el modo noche está desactivado";
+            }else{
+                //cambio el color de fondo y de texto
+                document.body.style.background = "rgb(32, 29, 39)";
+                document.body.style.color = "rgb(212, 212, 212)";
+
+                noche= "Es de noche, el modo noche se encuentra activado";
+            }
+
+            //Modifico el elemento de html con id="modoNoche" asignandole el string guardado en noche
+            document.getElementById("modoNoche").innerHTML = noche;
+        	
+            //actualizo la funcion cada segundo
+            setTimeout(MostrarTiempoColor, 1000); 
+        }
+
+        modoNoche();
+        console.log(hora);
+        </script>
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+Hay distintas formas de encarar un proyecto. La más recomendable es mobile first.
+
+3 Conceptos fundamentales:
+	-Columnas fluidas
+	-Imágenes flexibles: max-width:100%
+	-Media querys
+
+Vamos a usar breakpoints o mediaquerys. Los mismos se ponen al final del archivo css, porque si los pongo primero, la cascada los deja inutilizados.
+
+Sintaxis:
+	@media "tipo de medio" and|or (condición)
+
+Tipos de medio:	all, print, screen, speech
+Las condiciones más utilizadas son min-width, max-width y orientation
+
+Ejemplos:
+	@media screen and (min-width:360px)
+	@media screen and (max-width: 1024px) and (orientation: landscape)
+	@media screen and (max-width: 480px) or (orientation: portrait)
+
+Ejemplo
+
+	body{
+		background-color: blue;
+	}
+
+	@media screen and (min-width: 480px){
+		body{
+			backgound-color:red;
+		}
+	}
+
+Para pantallas menores de 480píxeles de ancho, va a usar fondo azul. Para pantallas de pc va a usar fondo rojo.

@@ -1,0 +1,239 @@
+.me{    
+        display: none;
+        position:fixed;
+        top: -2em;
+        left: 0;
+        width:100%;
+        text-align: center;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image:radial-gradient(circle, white,rgb(187, 224, 212));
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    height: 200%;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+body header div, .about_me, body footer{
+    background-color:white;
+    box-shadow: rgb(152, 209, 206) 0.5rem 0.5rem 1rem;
+}
+hr{
+    width:80%;
+    background-color:lightsteelblue;
+}
+h2{
+    text-align: center;
+}
+
+
+
+.presentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+}
+.intro{
+    width: 25%;
+    max-width: 4cm;
+    margin: 0;
+    margin-right: 2em;
+    padding: 1em;
+    font-family:monospace;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.qr{
+    display: none;
+}
+.profile{
+    width:100%;
+    margin: auto;
+}
+.qr-img{
+    width:100%;
+    margin: auto;
+}
+.information{
+    margin: 0;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.list{
+    width: 90%;
+    margin: 0 auto;
+}
+.icon{
+    display:inline-block;
+    width: 1em;
+    margin-right: 1em;
+}
+
+
+
+
+
+
+.about_me{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30vh;
+    padding-bottom: 1em;
+}
+.education{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+.place_icon{
+    width:75%;
+    max-width: 1cm;
+    padding:12.5%;
+    padding-right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+.place{
+    padding-left: 0.5em;
+    width: 12.5%;
+    max-width: 2cm;
+    flex-shrink: 0;
+    flex-grow: 0;
+    text-align: center;
+}
+.info{
+    margin: 0 5em;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+
+
+@keyframes slidein {
+    from {
+        margin-top:-100%;
+    }
+    to {
+        margin-top:1rem;   
+    }
+  }
+  
+  @keyframes slidein2 {
+    from {
+      margin-top: 200%;
+    }
+    to {
+      margin-top: 0;
+    }
+  }
+
+
+@media screen and (min-width:380px){
+    body{
+        font-size: 8px;
+    }
+    header {
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+    
+    main {
+        animation-duration: 3s;
+        animation-name: slidein2;
+    }
+}
+
+@media screen and (min-width:550px){
+    body{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:800px){
+    body{
+        font-size: 12px;
+    }
+    .presentation, .about_me{
+        max-width: 50em;
+    }
+}
+
+@media screen and (min-width:1081px){
+    body{
+        font-size: initial;
+    }
+}
+
+
+
+@media print{
+
+    .me{
+        display: block;
+    }
+    body{
+        font-size: 13px;   
+    }
+
+    body header div, .about_me, body footer{
+        background-color:white;
+        box-shadow:none;
+    }
+    .about_me{
+        margin-bottom: 0;
+    }
+    .intro{
+        display: none;
+    }
+    .qr{
+        display: block;
+        width: 25%;
+        max-width: 4cm;
+        margin: 0;
+        margin-right: 2em;
+        padding: 1em;
+        font-family:monospace;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+
+}
+
+  
+  
+/*
+
+@media screen and (min-width:751px) and (orientation:landscape){
+    
+    .presentation{
+        max-width: 50rem;
+    }
+    .about_me{
+        max-width: 50rem;
+    }
+
+    .intro{
+        max-width: 4cm;
+        margin-right: 3rem;
+    }
+}
+*/
